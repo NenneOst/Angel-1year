@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1 Year Anniversary ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Angel.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="glowing-heart">❤️</div>
+        <p>Gathering 365 days of love...</p>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="your-music-file.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-btn" class="music-btn">🎵 Play Our Song</button>
+
+    <div id="particles-container"></div>
+
+    <section id="hero" class="parallax">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-text">
+            <h1>Happy 1 Year, My Love ❤️</h1>
+            <p class="subtitle">1 year already huh, lets take a step back darling and look through this year :).</p>
+            <a href="#quiz-1" class="scroll-down-btn">1 Year of us ↓</a>
+        </div>
+    </section>
+
+    <section id="quiz-1" class="quiz-section">
+        <div class="quiz-card">
+            <span class="quiz-number">Challenge #1</span>
+            <h3>What did we spend the most time together and had our best memories at?</h3>
+            <div class="quiz-options">
+                <button class="choice-btn" onclick="checkAnswer(this, false, 'counter-section, quiz-2')">Playing Dead By Daylight</button>
+                <button class="choice-btn" onclick="checkAnswer(this, true, 'counter-section, quiz-2')">Playing Overwatch️</button>
+                <button class="choice-btn" onclick="checkAnswer(this, false, 'counter-section, quiz-2')">Playing Roblox</button>
+            </div>
+            <p class="quiz-feedback"></p>
+        </div>
+    </section>
+
+    <section id="counter-section" class="reveal locked-section">
+        <h2 class="section-title">Every Second Counts</h2>
+        <p class="section-subtitle">The day i asked you to be my Girlfriend:</p>
+        <div class="counter-container">
+            <div class="time-box"><span id="days">00</span><p>Days</p></div>
+            <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
+            <div class="time-box"><span id="minutes">00</span><p>Minutes</p></div>
+            <div class="time-box"><span id="seconds">00</span><p>Seconds</p></div>
+        </div>
+        <a href="#quiz-2" class="scroll-down-btn next-lock-btn">Next Challenge ↓</a>
+    </section>
+
+    <section id="quiz-2" class="quiz-section locked-section">
+        <div class="quiz-card">
+            <span class="quiz-number">Challenge #2</span>
+            <h3>What is my absolute favorite habit or thing that you do?</h3>
+            <div class="quiz-options">
+                <button class="choice-btn" onclick="checkAnswer(this, false, 'love-letter-section, story, quiz-3')">Your Mercy Pocket</button>
+                <button class="choice-btn" onclick="checkAnswer(this, false, 'love-letter-section, story, quiz-3')">Your drawings</button>
+                <button class="choice-btn" onclick="checkAnswer(this, true, 'love-letter-section, story, quiz-3')">The way you show how much u care by getting needy and jealous</button>
+            </div>
+            <p class="quiz-feedback"></p>
+        </div>
+    </section>
+
+    <section id="love-letter-section" class="reveal locked-section">
+        <h2 class="section-title">A Letter For You</h2>
+        <p class="section-subtitle">Click the envelope to open</p>
+        
+        <div class="envelope-wrapper" onclick="toggleLetter()">
+            <div class="envelope" id="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                <div class="letter" id="letter">
+                    <p class="greeting">My Dearest,</p>
+                    <p>I cant believe its already been a year. Every second has feelt like a dream with you, i never throught id deserve somebody as wonderful as you. You used to be a dream and i still cant beleve your a reality which loves me just as much as i love you. Every part of you.</p>
+                    <p>I promise to keep loving you, choosing you, and growing with you. We will last forever and ever, pinky!</p>
+                    <p class="closing">Yours only,<br>NenneOst</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="reveal parallax-bg-2 locked-section">
+        <div class="hero-overlay"></div>
+        <h2 class="section-title" style="z-index: 2; position: relative;">Chapters of Us</h2>
+        
+        <div class="timeline-container">
+            <div class="timeline-block left reveal">
+                <div class="timeline-content">
+                    <h3>The Day We Met</h3>
+                    <span class="date">April 9 (ish...), 2025</span>
+                    <p>Back then i had no idea just looking for somebody to play games with would change my life the way you did, your smile did so much for me.</p>
+                </div>
+            </div>
+            <div class="timeline-block right reveal">
+                <div class="timeline-content">
+                    <h3>Our First Game</h3>
+                    <span class="date">April 10, 2025</span>
+                    <p>I was to nervous to even call back then even if i tried playing it off i just tried my best to make you happy by being ur pocket mercy WHICH I WOULD NEVER DO FOR ANYONE ELSE...</p>
+                </div>
+            </div>
+            <div class="timeline-block left reveal">
+                <div class="timeline-content">
+                    <h3>The First "I Love You"</h3>
+                    <span class="date">April 29, 2025</span>
+                    <p>I coudnt stop blushing when i said it and im so thankful i did maybe otherwise it woudnt have happend.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#quiz-3" class="scroll-down-btn next-lock-btn" style="position: relative; z-index: 2;">Final Challenge ↓</a>
+    </section>
+
+    <section id="quiz-3" class="quiz-section locked-section">
+        <div class="quiz-card">
+            <span class="quiz-number">Challenge #3</span>
+            <h3>What was the moment i realized i was entirely in love with you?</h3>
+            <div class="quiz-options">
+                <button class="choice-btn" onclick="checkAnswer(this, true, 'gallery, reasons, future, finale')">When we had our late night talks</button>
+                <button class="choice-btn" onclick="checkAnswer(this, false, 'gallery, reasons, future, finale')">When we called all day</button>
+                <button class="choice-btn" onclick="checkAnswer(this, false, 'gallery, reasons, future, finale')">All the teasing you did</button>
+            </div>
+            <p class="quiz-feedback"></p>
+        </div>
+    </section>
+
+    <section id="gallery" class="reveal locked-section">
+        <h2 class="section-title">My darling<3 </h2>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="picture5.png" alt="Memory 1">
+                <div class="caption">My favorite drawing</div>
+            </div>
+            <div class="slide fade">
+                <img src="picture1.jpg" alt="Memory 2">
+                <div class="caption">Us being silly</div>
+            </div>
+            <div class="slide fade">
+                <img src="picture4.jpg" alt="Memory 3">
+                <div class="caption">My favorite photo</div>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <section id="reasons" class="reveal locked-section">
+        <h2 class="section-title">Reasons i chose you</h2>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <h3>Your Heart</h3>
+                <p>The purest heart ive ever seen</p>
+            </div>
+            <div class="reason-card">
+                <h3>Your Eyes</h3>
+                <p>Your beutiful chariming blue eyes stole my heart day one</p>
+            </div>
+            <div class="reason-card">
+                <h3>Your Care</h3>
+                <p>The way you care and worry for me.</p>
+            </div>
+            <div class="reason-card">
+                <h3>Your Jealousness</h3>
+                <p>How needy and jealous u get for me is something that i adore.</p>
+            </div>
+            <div class="reason-card">
+                <h3>Your Body</h3>
+                <p>You have the genuine sexiest body i can even imagine from ur curves, to ur belly i adore all of it.</p>
+            </div>
+            <div class="reason-card">
+                <h3>Your Soul</h3>
+                <p>You are my safe place, my everything and ur the other part of my soul.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="future" class="reveal locked-section">
+        <h2 class="section-title">To Our Next Chapters...</h2>
+        <p class="section-subtitle">Things i cant wait to do with you</p>
+        <ul class="bucket-list">
+            <li>✈️ Meet you</li>
+            <li>🏡 Hopefully move in</li>
+            <li>🐶 You being my good puppy</li>
+            <li>🌅 Spend every night together</li>
+        </ul>
+    </section>
+
+    <section id="finale" class="reveal locked-section">
+        <div class="finale-content">
+            <p class="heartfelt-message">
+                One year down, an entire lifetime to go. You are my today and all of my tomorrows.
+            </p>
+            <div class="giant-glowing-heart">❤️</div>
+            <h2 class="forever-text">I Love You, Forever.</h2>
+        </div>
+    </section>
+
+    <script src="javaangel.js"></script>
+</body>
+</html>
